@@ -4,7 +4,7 @@
  */
 
 /dts-v1/;
-#include "openhour-chameleon.dtsi"
+#include "rk3288-openhour-chameleon.dtsi"
 
 / {
 	model = "Tinker-RK3288";
