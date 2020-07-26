@@ -1,0 +1,15 @@
+if TARGET_OPENHOUR_CHAMELEON
+
+config SYS_BOARD
+	default "openhour_chameleon"
+
+config SYS_VENDOR
+	default "rockchip"
+
+config SYS_CONFIG_NAME
+	default "openhour_chameleon"
+
+config BOARD_SPECIFIC_OPTIONS # dummy
+	def_bool y
+
+endif
