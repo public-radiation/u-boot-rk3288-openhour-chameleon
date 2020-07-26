@@ -131,6 +131,16 @@ config TARGET_TINKER_RK3288
 	  8GB eMMC and 2GB of SDRAM. Expansion connectors provide access to
 	  I2C, SPI, UART, GPIOs.
 
+config TARGET_OPENHOUR_CHAMELEON
+	bool "Openhour-Chameleon"
+        select BOARD_LATE_INIT
+	select TPL
+	help
+	  Open hour Chameleon Tv box RK3288 based with 2GB ram, 
+	  Gigabit Ethernet, 3x USB + OTG, HDMI, SD + MicroSD, IR and 
+	  Digital audio(SPDIF, Coax). 
+	  Optional with External USB WiFi and BLE (MT7632U chipset).  
+
 endchoice
 
 config ROCKCHIP_FAST_SPL
@@ -192,5 +202,7 @@ source "board/radxa/rock2/Kconfig"
 source "board/rockchip/evb_rk3288/Kconfig"
 
 source "board/rockchip/tinker_rk3288/Kconfig"
+
+source "board/rockchip/openhour_chameleon/Kconfig"
 
 endif
