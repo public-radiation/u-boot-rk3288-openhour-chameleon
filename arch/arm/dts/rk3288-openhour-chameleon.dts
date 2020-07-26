@@ -7,8 +7,8 @@
 #include "rk3288-openhour-chameleon.dtsi"
 
 / {
-	model = "Tinker-RK3288";
-	compatible = "rockchip,rk3288-tinker", "rockchip,rk3288";
+	model = "OpenHour-Chameleon-RK3288";
+	compatible = "rockchip,rk3288-openhour-chameleon", "rockchip,rk3288";
 
 	chosen {
 		stdout-path = &uart2;

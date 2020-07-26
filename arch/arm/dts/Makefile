@@ -90,7 +90,7 @@ dtb-$(CONFIG_ROCKCHIP_RK3288) += \
 	rk3288-evb.dtb \
 	rk3288-firefly.dtb \
 	rk3288-miqi.dtb \
-	rk3288-openhour-chameleon.dts \
+	rk3288-openhour-chameleon.dtb \
 	rk3288-phycore-rdk.dtb \
 	rk3288-popmetal.dtb \
 	rk3288-rock2-square.dtb \
