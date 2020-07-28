@@ -23,6 +23,18 @@
 	};
 };
 
+&emmc {
+	bus-width = <8>;
+	cap-mmc-highspeed;
+	non-removable;
+	pinctrl-names = "default";
+	pinctrl-0 = <&emmc_clk &emmc_cmd &emmc_pwr &emmc_bus8>;
+	max-frequency = <150000000>;
+	mmc-hs200-1_8v;
+	mmc-ddr-1_8v;
+	status = "okay";
+};
+
 &pwm1 {
 	status = "okay";
 };
@@ -34,11 +46,4 @@
 &usb_host1 {
 	vbus-supply = <&vcc5v0_host>;
 	status = "okay";
-};
-
-&i2c2 {
-    m24c08@50 {
-        compatible = "at,24c08", "i2c-eeprom";
-        reg = <0x50>;
-    };
 };
