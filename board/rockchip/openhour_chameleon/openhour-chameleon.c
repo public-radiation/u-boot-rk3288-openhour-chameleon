@@ -3,7 +3,7 @@
  * (C) Copyright 2016 Rockchip Electronics Co., Ltd
  */
 
-#include <common.h>
+/*#include <common.h>
 #include <dm.h>
 #include <eeprom.h>
 #include <env.h>
@@ -47,4 +47,4 @@ int mmc_get_env_dev(void)
 		return 0;
 
 	return 1;
-}
+}*/
